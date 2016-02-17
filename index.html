@@ -1,57 +1,364 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Chanter by SongBase</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Chanter Practice</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <meta content="Donald G Gray" name="author">
+    <meta content="Here are some popular tunes for you to play along to on your practice chanter." name="description">
+    <meta property="og:image" content="http://audovia.com/image/Kelpies1280.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chanter Practice">
+    <meta property="og:description" content="Here are some popular tunes for you to play along to on your practice chanter.">
+    <style type="text/css">
+      body {background-color: #E8CCFF;}
+      a:link {color: #551A8B;}
+      a:visited {color: #551A8B;}
+      a:active {color: #EE0000;}
+      a.nounderline {text-decoration:none; font-weight:bold;}
+      div.centre {text-align: center;}
+      div.left {text-align: left;}
+      div.subheader {color: #551A8B; line-height: 1.8; text-align: center;}
+      span.header {color: #551A8B; font-family: Trebuchet MS; font-size: 40px;}
+      span.subheader {font-family: Perpetua; font-size: 22px;}
+      span.invite {color: #555555; font-family: Verdana; font-size: 15px;}
+      span.composer {color: #817F73; font-family: Verdana; font-size: 16px;}
+      span.song {color: #551A8B; cursor: pointer; font-family: Verdana; font-size: 16px;}
+      span.part {color: #551A8B; cursor: pointer; font-family: Verdana; font-size: 14px;}
+      span.xml {color: #551A8B; cursor: pointer; font-family: Verdana;}
+      span.title {color: #817F73; font-family: Verdana; font-size: small;}
+      span.subtitle {color: #551A8B; font-family: Verdana; font-size: 14px; line-height: 2.0;}
+      span.body {color: #555555; font-family: Verdana; font-size: 14px; line-height: 1.3;}
+      span.fullsize {color: #000000; font-family: Verdana; font-size: 14px; line-height: 1.5;}
+      td.heading {background-color: transparent;}
+      td.background {background-color: transparent;}
+    </style>
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Chanter</h1>
-      <h2 class="project-tagline">Chanter Practice</h2>
-      <a href="https://github.com/SongBase/chanter" class="btn">View on GitHub</a>
-      <a href="https://github.com/SongBase/chanter/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/SongBase/chanter/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <table style="width: 980px; text-align: left; margin-left: auto;
+      margin-right: auto;" border="0" cellpadding="4" cellspacing="0">
+      <tbody>
+       <!-- <tr>
+          <td><br></td>
+          <td><br></td>
+          <td><br></td>
+        </tr> -->
+        <tr>
+          <td style="vertical-align: top; width: 180px;">
+            <!--<a href="doc/AudoviaDocumentation-3-0-8.pdf" target="_blank">
+              <img title="Documentation"
+                alt="Song Builder Icon" src="image/SongBuilderColourIcon96.png"
+                style="border: 0px solid; width: 74px; height: 74px;" align="left"></a>-->
+              <a href="http://www.nga.gov/content/ngaweb/Collection/art-object-page.144298.html" target="_blank">
+              <img title="Bagpipe Player&#013;Hendrick ter Brugghen&#013;1624"
+                alt="Bagpipe Player" src="image/BagpiperIcon.jpg"
+                style="border: 0px solid;" align="left"></a>
+          </td>
+         <h1 style="font-weight: normal;"> <td style=" vertical-align: top;">
+            <div class="centre">
+              <span class="header" style="font-family: Trebuchet MS;">Chanter Practice</span>
+              <span class="subtitle"><br><em>popular tunes to play along to on your practice chanter</em></span>
+              <!--<br>-->
+            </div>
+          </td> </h1>
+          <td style=" vertical-align: top; text-align: right; width: 180px;">
+            <!-- Place this code where you want the badge to render. -->
+            <a href="https://plus.google.com/u/0/communities/107805740388997298348?prsrc=3"
+              rel="publisher" target="_blank"
+              style="text-decoration:none; display:inline-block; color:#333; text-align:center;
+              font:13px/16px arial,sans-serif; white-space:nowrap;">
+              <!--<span style="display:inline-block; font-weight:bold; vertical-align:top; margin-right:5px;
+                margin-top:8px;">
+              </span>
+              <span style="display:inline-block; vertical-align:top; margin-right:15px;
+                margin-top:8px;">
+              </span>-->
+              <img src="http://ssl.gstatic.com/images/icons/gplus-32.png"
+                alt="Google+" style="border:0; width:32px; height:32px;">
+            </a>
+            <!--&nbsp;
+            <a href="https://github.com/SongBase/Audovia"
+              target="_blank"><img src="image/GitHub-Mark-32px.png"
+                alt="GitHub" style="border:0; width:32px; height:32px;">
+            </a>-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <div style="position: absolute; left: 50%; margin-left: -486px; top: 120px;">
+    <span class="song">
+    <em>Light Music</em>
+    </span>
+    </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+    <!-- Start of bagpipe playlist -->
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+    <div style="position: absolute; left: 50%; margin-left: -486px; top: 150px; background-color: #FFFFFF;">
+      <div style="border-style: none; width: 510px; height: 296px; overflow: auto; margin-top: 10px; margin-bottom: 10px; margin-left: 20px;">
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+    <div id="playlist">
+    </div>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+    <div id="audio">
+    </div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+    <script type="text/javascript">
+    var text = '{ "songs" : [' +
+    '{ "record_type":"song" , "composer":"Traditional"       , "song":"Bonnie Lass of Fyvie"         , "mp3":"BonnieLassOfFyvie.mp3"                 } ,' +
+    '{ "record_type":"song" , "composer":"Ian Hardie"        , "song":"Horsbrugh Castle"             , "mp3":"HorsbrughCastle.mp3"                   } ,' +
+    '{ "record_type":"song" , "composer":"William Ross"      , "song":"Leaving Port Askaig"          , "mp3":"Leaving Port Askaig-Song.mp3"          } ,' +
+    '{ "record_type":"part" , "composer":"William Ross"      , "song":"Part 1"                       , "mp3":"Leaving Port Askaig-Part 1.mp3"        } ,' +
+    '{ "record_type":"part" , "composer":"William Ross"      , "song":"Part 2"                       , "mp3":"Leaving Port Askaig-Part 2.mp3"        } ,' +
+    '{ "record_type":"part" , "composer":"William Ross"      , "song":"Part 3"                       , "mp3":"Leaving Port Askaig-Part 3.mp3"        } ,' +
+    '{ "record_type":"part" , "composer":"William Ross"      , "song":"Part 4"                       , "mp3":"Leaving Port Askaig-Part 4.mp3"        } ,' +
+    '{ "record_type":"song" , "composer":"Hamish MacColl"    , "song":"Major A C W May\'s Welcome"   , "mp3":"MajorACWMaysWelcome.mp3"               } ,' +
+    '{ "record_type":"song" , "composer":"Hamish MacColl"    , "song":"Major Bobby"                  , "mp3":"MajorBobby.mp3"                        } ,' +
+    '{ "record_type":"song" , "composer":"Gavin Stoddart"    , "song":"On the Road to Passchendaele" , "mp3":"OnTheRoadToPasschendaele.mp3"          } ,' +
+    '{ "record_type":"song" , "composer":"Hance Gates"       , "song":"Pipe Major Diarmid Lindsay"   , "mp3":"Pipe Major Diarmid Lindsay-Song.mp3"   } ,' +
+    '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 1"                       , "mp3":"Pipe Major Diarmid Lindsay-Part 1.mp3" } ,' +
+    '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 2"                       , "mp3":"Pipe Major Diarmid Lindsay-Part 2.mp3" } ,' +
+    '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 3"                       , "mp3":"Pipe Major Diarmid Lindsay-Part 3.mp3" } ,' +
+    '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 4"                       , "mp3":"Pipe Major Diarmid Lindsay-Part 4.mp3" } ,' +
+    '{ "record_type":"song" , "composer":"Ian Duncan"        , "song":"Pipe Sergeant John Barclay"   , "mp3":"PipeSergeantJohnBarclay.mp3"           } ,' +
+    '{ "record_type":"part" , "composer":"Ian Duncan"        , "song":"Part 1"                       , "mp3":"Pipe Sergeant John Barclay-Part 1.mp3" } ,' +
+    '{ "record_type":"part" , "composer":"Ian Duncan"        , "song":"Part 2"                       , "mp3":"Pipe Sergeant John Barclay-Part 2.mp3" } ,' +
+    '{ "record_type":"part" , "composer":"Ian Duncan"        , "song":"Part 3"                       , "mp3":"Pipe Sergeant John Barclay-Part 3.mp3" } ,' +
+    '{ "record_type":"part" , "composer":"Ian Duncan"        , "song":"Part 4"                       , "mp3":"Pipe Sergeant John Barclay-Part 4.mp3" } ,' +
+    '{ "record_type":"song" , "composer":"Traditional"       , "song":"Rocking the Baby"             , "mp3":"RockingTheBaby.mp3"                    } ,' +
+    '{ "record_type":"song" , "composer":"William Fergusson" , "song":"The Australian Ladies"        , "mp3":"The Australian Ladies-Song.mp3"        } ,' +
+    '{ "record_type":"part" , "composer":"William Fergusson" , "song":"Part 1"                       , "mp3":"The Australian Ladies-Part 1.mp3"      } ,' +
+    '{ "record_type":"part" , "composer":"William Fergusson" , "song":"Part 2"                       , "mp3":"The Australian Ladies-Part 2.mp3"      } ,' +
+    '{ "record_type":"part" , "composer":"William Fergusson" , "song":"Part 3"                       , "mp3":"The Australian Ladies-Part 3.mp3"      } ,' +
+    '{ "record_type":"part" , "composer":"William Fergusson" , "song":"Part 4"                       , "mp3":"The Australian Ladies-Part 4.mp3"      } ,' +
+    '{ "record_type":"song" , "composer":"John MacLellan"    , "song":"The Heroes of Vittoria"       , "mp3":"TheHeroesOfVittoria.mp3"               } ,' +
+    '{ "record_type":"song" , "composer":"Tom Muirhead"      , "song":"The Hills of Alva"            , "mp3":"The Hills of Alva-Song.mp3"            } ,' +
+    '{ "record_type":"song" , "composer":"Gordon Mackenzie"  , "song":"The Sands of Kuwait"          , "mp3":"TheSandsOfKuwait.mp3"                  }  ' +
+    ']}';
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+    var obj = JSON.parse(text);
+    var table_content = '<table width="450" border="0" cellpadding="2" cellspacing="0"><tbody>';
+    var audio_content = '';
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+    for (i = 0; i < obj.songs.length; i++)
+    {
+       if (obj.songs[i].record_type == "song")
+       {
+         if (i > 0)
+         {
+           table_content += '<tr><td> </td></tr>';
+         }
+         table_content += '<tr><td><span title="Click to play or pause and double-click to rewind." ' +
+                                   'onclick="playPause(songArray[' + i + '], audioArray[' + i + '])" ' +
+                                   'ondblclick="onEnd(songArray[' + i + '], audioArray[' + i + '])" ' +
+                                   'class="song" id="song' + i + '">' + obj.songs[i].song + '</span></td>';
+         table_content += '<td><span class="composer">' + obj.songs[i].composer + '</span></td></tr>';
+       }
+       else
+       {
+         table_content += '<tr><td><span title="Click to play or pause and double-click to rewind." ' +
+                                   'onclick="playPause(songArray[' + i + '], audioArray[' + i + '])" ' +
+                                   'ondblclick="onEnd(songArray[' + i + '], audioArray[' + i + '])" ' +
+                                   'class="part" id="song' + i + '">&nbsp;&nbsp;&nbsp;&nbsp;' + obj.songs[i].song + '</span></td></tr>';
+       }
+       audio_content += '<audio id="audio' + i + '" onended="onEnd(songArray[' + i + '], audioArray[' + i + '])" src="music/' + obj.songs[i].mp3 + '"></audio>';
+    }
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+    table_content += '</tbody></table>';
+    document.getElementById("playlist").innerHTML = table_content;
+    document.getElementById("audio").innerHTML = audio_content;
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+    var audioArray = new Array();
+    var songArray = new Array();
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/SongBase/chanter">Chanter</a> is maintained by <a href="https://github.com/SongBase">SongBase</a>.</span>
+    for (i = 0; i < obj.songs.length; i++)
+    {
+      audioArray[i] = document.getElementById("audio" + i);
+      songArray[i] = document.getElementById("song" + i);
+    }
+    </script>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+      </div>
+    </div>
 
-    </section>
+    <!-- End of bagpipe playlist -->
 
-  
+    <div style="position: absolute; left: 50%; margin-left: 132px; top: 120px;">
+    <span class="song">
+    <em>Piobaireachd</em>
+    </span>
+    </div>
+
+    <!-- Start of piobaireachd playlist -->
+
+    <div style="position: absolute; left: 50%; margin-left: 132px; top: 150px; background-color: #FFFFFF;">
+      <div style="border-style: none; height: 296px; width: 350px; overflow: auto; margin-top: 10px; margin-bottom: 10px; margin-left: 20px;">
+
+    <div id="table2_playlist">
+    </div>
+
+    <div id="table2_audio">
+    </div>
+
+    <script type="text/javascript">
+    var text = '{ "songs" : [' +
+    '{ "record_type":"song" , "song":"I got a Kiss of the King\'s Hand" , "mp3":"IGotAKissOfTheKingsHand.mp3"                  } ,' +
+    '{ "record_type":"part" , "song":"Urlar"                            , "mp3":"IGotAKissOfTheKingsHandUrlar.mp3"             } ,' +
+    '{ "record_type":"part" , "song":"Variation"                        , "mp3":"IGotAKissOfTheKingsHandVariation.mp3"         } ,' +
+    '{ "record_type":"part" , "song":"Variation Doubling"               , "mp3":"IGotAKissOfTheKingsHandVariationDoubling.mp3" } ,' +
+    '{ "record_type":"part" , "song":"Taorluath"                        , "mp3":"IGotAKissOfTheKingsHandTaorluath.mp3"         } ,' +
+    '{ "record_type":"part" , "song":"Taorluath Doubling"               , "mp3":"IGotAKissOfTheKingsHandTaorluathDoubling.mp3" } ,' +
+    '{ "record_type":"part" , "song":"Crunluath"                        , "mp3":"IGotAKissOfTheKingsHandCrunluath.mp3"         } ,' +
+    '{ "record_type":"part" , "song":"Crunluath Doubling"               , "mp3":"IGotAKissOfTheKingsHandCrunluathDoubling.mp3" } ,' +
+    '{ "record_type":"part" , "song":"Crunluath A Mach"                 , "mp3":"IGotAKissOfTheKingsHandCrunluathAMach.mp3"    } ,' +
+
+    '{ "record_type":"song" , "song":"The Desperate Battle"             , "mp3":"The Desperate Battle-Piobaireachd.mp3"         } ,' +
+    '{ "record_type":"part" , "song":"Urlar"                            , "mp3":"The Desperate Battle-Urlar.mp3"                } ,' +
+    '{ "record_type":"part" , "song":"Variation 1"                      , "mp3":"The Desperate Battle-Variation 1.mp3"          } ,' +
+    '{ "record_type":"part" , "song":"Variation 1 Doubling"             , "mp3":"The Desperate Battle-Variation 1 Doubling.mp3" } ,' +
+    '{ "record_type":"part" , "song":"Variation 2"                      , "mp3":"The Desperate Battle-Variation 2.mp3"          } ,' +
+    '{ "record_type":"part" , "song":"Variation 2 Doubling"             , "mp3":"The Desperate Battle-Variation 2 Doubling.mp3" } ,' +
+    '{ "record_type":"part" , "song":"Variation 3"                      , "mp3":"The Desperate Battle-Variation 3.mp3"          } ,' +
+    '{ "record_type":"part" , "song":"Variation 3 Doubling"             , "mp3":"The Desperate Battle-Variation 3 Doubling.mp3" } ,' +
+    '{ "record_type":"part" , "song":"Taorluath"                        , "mp3":"The Desperate Battle-Taorluath.mp3"            } ,' +
+    '{ "record_type":"part" , "song":"Taorluath A Mach"                 , "mp3":"The Desperate Battle-Taorluath A Mach.mp3"     } ,' +
+    '{ "record_type":"part" , "song":"Crunluath"                        , "mp3":"The Desperate Battle-Crunluath.mp3"            } ,' +
+    '{ "record_type":"part" , "song":"Crunluath A Mach"                 , "mp3":"The Desperate Battle-Crunluath A Mach.mp3"     } ,' +
+
+    '{ "record_type":"song" , "song":"The Glen is Mine"                 , "mp3":"TheGlenIsMine.mp3"                            } ,' +
+    '{ "record_type":"part" , "song":"Urlar"                            , "mp3":"TheGlenIsMineUrlar.mp3"                       } ,' +
+    '{ "record_type":"part" , "song":"Variation 1"                      , "mp3":"TheGlenIsMineVariation1.mp3"                  } ,' +
+    '{ "record_type":"part" , "song":"Variation 2"                      , "mp3":"TheGlenIsMineVariation2.mp3"                  } ,' +
+    '{ "record_type":"part" , "song":"Variation 3"                      , "mp3":"TheGlenIsMineVariation3.mp3"                  } ,' +
+    '{ "record_type":"part" , "song":"Leamluath"                        , "mp3":"TheGlenIsMineLeamluath.mp3"                   } ,' +
+    '{ "record_type":"part" , "song":"Leamluath Doubling"               , "mp3":"TheGlenIsMineLeamluathDoubling.mp3"           } ,' +
+    '{ "record_type":"part" , "song":"Taorluath"                        , "mp3":"TheGlenIsMineTaorluath.mp3"                   } ,' +
+    '{ "record_type":"part" , "song":"Taorluath Doubling"               , "mp3":"TheGlenIsMineTaorluathDoubling.mp3"           } ,' +
+    '{ "record_type":"part" , "song":"Crunluath"                        , "mp3":"TheGlenIsMineCrunluath.mp3"                   } ,' +
+    '{ "record_type":"part" , "song":"Crunluath Doubling"               , "mp3":"TheGlenIsMineCrunluathDoubling.mp3"           } ,' +
+    '{ "record_type":"part" , "song":"Crunluath A Mach"                 , "mp3":"TheGlenIsMineCrunluathAMach.mp3"              }  ' +
+    ']}';
+
+    var obj = JSON.parse(text);
+    var table2_content = '<table width="300" border="0" cellpadding="4" cellspacing="0" style="line-height: 1.0;"><tbody>';
+    var audio2_content = '';
+
+    for (i = 0; i < obj.songs.length; i++)
+    {
+      if (obj.songs[i].record_type == "song")
+      {
+        if (i > 0)
+        {
+          table2_content += '<tr><td> </td></tr>';
+        }
+        table2_content += '<tr><td><span title="Click to play or pause and double-click to rewind." ' +
+                                   'onclick="playPause(songArray2[' + i + '], audioArray2[' + i + '])" ' +
+                                   'ondblclick="onEnd(songArray2[' + i + '], audioArray2[' + i + '])" ' +
+                                   'class="song" id="table2_song' + i + '">' + obj.songs[i].song + '</span></td></tr>';
+      }
+      else
+      {
+        table2_content += '<tr><td><span title="Click to play or pause and double-click to rewind." ' +
+                                   'onclick="playPause(songArray2[' + i + '], audioArray2[' + i + '])" ' +
+                                   'ondblclick="onEnd(songArray2[' + i + '], audioArray2[' + i + '])" ' +
+                                   'class="part" id="table2_song' + i + '">&nbsp;&nbsp;&nbsp;&nbsp;' + obj.songs[i].song + '</span></td></tr>';
+      }
+      audio2_content += '<audio id="table2_audio' + i + '" onended="onEnd(songArray2[' + i + '], audioArray2[' + i + '])" src="music/' + obj.songs[i].mp3 + '"></audio>';
+    }
+
+    table2_content += '</tbody></table>';
+    document.getElementById("table2_playlist").innerHTML = table2_content;
+    document.getElementById("table2_audio").innerHTML = audio2_content;
+
+    var audioArray2 = new Array();
+    var songArray2 = new Array();
+
+    for (i = 0; i < obj.songs.length; i++)
+    {
+      audioArray2[i] = document.getElementById("table2_audio" + i);
+      songArray2[i] = document.getElementById("table2_song" + i);
+    }
+    </script>
+
+      </div>
+    </div>
+
+    <!-- End of piobaireachd playlist -->
+
+    <script type="text/javascript">
+      function onEnd(song, audio)
+      {
+        song.style.color = '#551A8B';
+        audio.load();
+      }
+
+      function playPause(song, audio)
+      {
+        for (i = 0; i < songArray.length; i++)
+        {
+          if (song != songArray[i])
+          {
+            if (!audioArray[i].paused)
+            {
+              songArray[i].style.color = 'red';
+              audioArray[i].pause();
+            }
+          }
+        }
+
+        for (i = 0; i < songArray2.length; i++)
+        {
+          if (song != songArray2[i])
+          {
+            if (!audioArray2[i].paused)
+            {
+              songArray2[i].style.color = 'red';
+              audioArray2[i].pause();
+            }
+          }
+        }
+
+        if (audio.paused)
+        {
+          song.style.color = 'green';
+          audio.play();
+        }
+        else
+        {
+          song.style.color = 'red';
+          audio.pause();
+        }
+      }
+    </script>
+
+    <div style="position: absolute; left: 50%; margin-left: -486px; top: 500px;">
+    <span class="song">
+    <em>How it was done</em>
+    </span>
+    </div>
+
+    <div style="width: 972px; background-color: #ffffff; opacity: 0.6; margin-left: -486px; position: absolute; top: 530px; left: 50%;  border: 8px solid white;">
+      <span class="fullsize">The tunes here were produced using
+      <a class="nounderline" href="http://audovia.com/" target="_blank">Audovia</a> which uses
+      <a class="nounderline" href="http://www.jfugue.org/" target="_blank">JFugue</a>
+      MusicString notation to let you make music with up to 15 instrumental voices and a percussion track.&nbsp;
+      Notes within a MusicString are specified by their name and duration.&nbsp;
+      Durations can be expressed as pulses where 32 pulses represents a quarter note (crotchet).&nbsp;
+      An 'E' quarter note preceded by a 'G' grace note can be written as [G]/2 [E]/30.&nbsp;
+      The tunes were exported from <a class="nounderline" href="http://audovia.com/" target="_blank">Audovia</a> to WAV format and imported to
+      <a class="nounderline" href="http://audacityteam.org/" target="_blank">Audacity</a>
+      where they were amplified by a factor of 8 and exported to MP3.&nbsp; XML versions which you can import to
+      <a class="nounderline" href="http://audovia.com/" target="_blank">Audovia</a> are available
+      <a class="nounderline" href="https://drive.google.com/folderview?id=0B6s7db9SsZhVUmFhM2VVaG5raTg&usp=sharing"
+      target="_blank">here</a>.
+      </span>
+    </div>
+
+    <div align="center" style=" margin: auto; position: absolute; top: 700px; left: 0px; right: 0px;">
+      <span class="body"><em>Copyright © 2016&nbsp;&nbsp;
+                                Donald G Gray</em>
+      </span>
+    </div>
+
   </body>
 </html>
