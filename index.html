@@ -131,6 +131,11 @@
     '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 2"                             , "mp3":"Pipe Major Diarmid Lindsay-Part 2.mp3"         } ,' +
     '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 3"                             , "mp3":"Pipe Major Diarmid Lindsay-Part 3.mp3"         } ,' +
     '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 4"                             , "mp3":"Pipe Major Diarmid Lindsay-Part 4.mp3"         } ,' +
+    '{ "record_type":"song" , "composer":"Hance Gates"       , "song":"Pipe Major Donald Noble\'s Farewell<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to the Royal High School" , "mp3":"Pipe Major Donald Noble\'s Farewell to the Royal High School-Song.mp3" } ,' +
+    '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 1"                             , "mp3":"Pipe Major Donald Noble\'s Farewell to the Royal High School-Part 1.mp3"         } ,' +
+    '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 2"                             , "mp3":"Pipe Major Donald Noble\'s Farewell to the Royal High School-Part 2.mp3"         } ,' +
+    '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 3"                             , "mp3":"Pipe Major Donald Noble\'s Farewell to the Royal High School-Part 3.mp3"         } ,' +
+    '{ "record_type":"part" , "composer":"Hance Gates"       , "song":"Part 4"                             , "mp3":"Pipe Major Donald Noble\'s Farewell to the Royal High School-Part 4.mp3"         } ,' +
     '{ "record_type":"song" , "composer":"Ian Duncan"        , "song":"Pipe Sergeant John Barclay"         , "mp3":"PipeSergeantJohnBarclay.mp3"                   } ,' +
     '{ "record_type":"part" , "composer":"Ian Duncan"        , "song":"Part 1"                             , "mp3":"Pipe Sergeant John Barclay-Part 1.mp3"         } ,' +
     '{ "record_type":"part" , "composer":"Ian Duncan"        , "song":"Part 2"                             , "mp3":"Pipe Sergeant John Barclay-Part 2.mp3"         } ,' +
@@ -184,7 +189,7 @@
                                    'onclick="playPause(songArray[' + i + '], audioArray[' + i + '])" ' +
                                    'ondblclick="onEnd(songArray[' + i + '], audioArray[' + i + '])" ' +
                                    'class="song" id="song' + i + '">' + obj.songs[i].song + '</span></td>';
-         table_content += '<td><span class="composer">' + obj.songs[i].composer + '</span></td></tr>';
+         table_content += '<td style=" vertical-align: top;"><span class="composer">' + obj.songs[i].composer + '</span></td></tr>';
        }
        else
        {
