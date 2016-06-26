@@ -1,4 +1,0 @@
-#2 hours
-<FilesMatch "\.(png)$">
-Header set Cache-Control "max-age=7200"
-</FilesMatch>
