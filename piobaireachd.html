@@ -35,6 +35,7 @@
       span.caption {color: #551A8B;  font-family: Open Sans; font-size: 16px;}
       span.part {color: #551A8B; cursor: pointer; font-family: Open Sans; font-size: 14px;}
       span.text {color: #555555; font-family: Open Sans; font-size: 14px; line-height: 1.5;}
+      span.source {color: #555555; font-family: Open Sans; font-size: 16px;}
     </style>
   </head>
 
@@ -79,7 +80,7 @@
 
     <script type="text/javascript">
     var text = '{ "songs" : [' +
-    '{ "record_type":"song" , "song":"I got a Kiss of the King\'s Hand" , "mp3":"IGotAKissOfTheKingsHand.mp3"                  } ,' +
+    '{ "record_type":"song" , "song":"I got a Kiss of the King\'s Hand" , "mp3":"IGotAKissOfTheKingsHand.mp3"                  , "source":"The Piobaireachd Society Book 7" } ,' +
     '{ "record_type":"part" , "song":"Urlar"                            , "mp3":"IGotAKissOfTheKingsHandUrlar.mp3"             } ,' +
     '{ "record_type":"part" , "song":"Variation"                        , "mp3":"IGotAKissOfTheKingsHandVariation.mp3"         } ,' +
     '{ "record_type":"part" , "song":"Variation Doubling"               , "mp3":"IGotAKissOfTheKingsHandVariationDoubling.mp3" } ,' +
@@ -88,7 +89,7 @@
     '{ "record_type":"part" , "song":"Crunluath"                        , "mp3":"IGotAKissOfTheKingsHandCrunluath.mp3"         } ,' +
     '{ "record_type":"part" , "song":"Crunluath Doubling"               , "mp3":"IGotAKissOfTheKingsHandCrunluathDoubling.mp3" } ,' +
     '{ "record_type":"part" , "song":"Crunluath A Mach"                 , "mp3":"IGotAKissOfTheKingsHandCrunluathAMach.mp3"    } ,' +
-    '{ "record_type":"song" , "song":"The Desperate Battle"             , "mp3":"The Desperate Battle-Piobaireachd.mp3"         } ,' +
+    '{ "record_type":"song" , "song":"The Desperate Battle"             , "mp3":"The Desperate Battle-Piobaireachd.mp3"         , "source":"The Piobaireachd Society Book 7" } ,' +
     '{ "record_type":"part" , "song":"Urlar"                            , "mp3":"The Desperate Battle-Urlar.mp3"                } ,' +
     '{ "record_type":"part" , "song":"Variation 1"                      , "mp3":"The Desperate Battle-Variation 1.mp3"          } ,' +
     '{ "record_type":"part" , "song":"Variation 1 Doubling"             , "mp3":"The Desperate Battle-Variation 1 Doubling.mp3" } ,' +
@@ -100,7 +101,7 @@
     '{ "record_type":"part" , "song":"Taorluath A Mach"                 , "mp3":"The Desperate Battle-Taorluath A Mach.mp3"     } ,' +
     '{ "record_type":"part" , "song":"Crunluath"                        , "mp3":"The Desperate Battle-Crunluath.mp3"            } ,' +
     '{ "record_type":"part" , "song":"Crunluath A Mach"                 , "mp3":"The Desperate Battle-Crunluath A Mach.mp3"     } ,' +
-    '{ "record_type":"song" , "song":"The Glen is Mine"                 , "mp3":"TheGlenIsMine.mp3"                            } ,' +
+    '{ "record_type":"song" , "song":"The Glen is Mine"                 , "mp3":"TheGlenIsMine.mp3"                            , "source":"The Piobaireachd Society Book 6" } ,' +
     '{ "record_type":"part" , "song":"Urlar"                            , "mp3":"TheGlenIsMineUrlar.mp3"                       } ,' +
     '{ "record_type":"part" , "song":"Variation 1"                      , "mp3":"TheGlenIsMineVariation1.mp3"                  } ,' +
     '{ "record_type":"part" , "song":"Variation 2"                      , "mp3":"TheGlenIsMineVariation2.mp3"                  } ,' +
@@ -114,7 +115,7 @@
     '{ "record_type":"part" , "song":"Crunluath A Mach"                 , "mp3":"TheGlenIsMineCrunluathAMach.mp3"              }  ' +
     ']}';
     var obj = JSON.parse(text);
-    var table2_content = '<table width="300" border="0" cellpadding="4" cellspacing="0" style="line-height: 1.0;"><tbody>';
+    var table2_content = '<table width="600" border="0" cellpadding="4" cellspacing="0" style="line-height: 1.0;"><tbody>';
     var audio2_content = '';
     for (i = 0; i < obj.songs.length; i++)
     {
@@ -127,7 +128,7 @@
         table2_content += '<tr><td><span title="Click to play or pause and double-click to rewind." ' +
                                    'onclick="playPause(songArray2[' + i + '], audioArray2[' + i + '])" ' +
                                    'ondblclick="onEnd(songArray2[' + i + '], audioArray2[' + i + '])" ' +
-                                   'class="song" id="table2_song' + i + '">' + obj.songs[i].song + '</span></td></tr>';
+                                   'class="song" id="table2_song' + i + '">' + obj.songs[i].song + '</span></td><td><span class="source">' + obj.songs[i].source + '</span></td></tr>';
       }
       else
       {
@@ -191,35 +192,20 @@
     <div style="width: 988px; background-color: #ffffff;  margin-left: -486px; position: absolute; top: 566px; left: 50%;  border-width: 0px 0px 0px 0px; border-style: solid; border-color: white;">
       <span class="text">
       <p>
-      These tunes were produced using
-      <a class="nounderline" href="http://audovia.com/" target="_blank" rel="noopener noreferrer">Audovia</a> which uses
-      <a class="nounderline" href="http://www.jfugue.org/" target="_blank" rel="noopener noreferrer">JFugue</a>
-      MusicString notation.&nbsp;
-      Notes within a MusicString are specified by their name and duration.&nbsp;
-      Durations can be expressed as pulses where 32 pulses represents a quarter note (crotchet).&nbsp;
-      An 'E' quarter note preceded by a 'G' gracenote can be written as [G]/2&nbsp;[E]/30.
+        Piobaireachd is the unique and historic music of the Great Highland Bagpipe.&nbsp; It was created within an aural culture and retained through the generations by oral transmission.
       </p>
       <p>
-      In most of the tunes, the taorluaths and grips have been moved forward so that the beat falls on the 'D' gracenote.&nbsp; This improves expression and helps to give the tune that elusive "lift".
+        In Victorian times the music was refined and captured into staff notation.
       </p>
       <p>
-      The tunes were exported from <a class="nounderline" href="http://audovia.com/" target="_blank" rel="noopener noreferrer">Audovia</a> to WAV format, most using the Roland gm.dls soundbank, and opened in
-      <a class="nounderline" href="http://audacityteam.org/" target="_blank" rel="noopener noreferrer">Audacity</a>
-      where they were amplified by 8 and exported to MP3.&nbsp;
-      XML versions which you can import into
-      <a class="nounderline" href="http://audovia.com/" target="_blank" rel="noopener noreferrer">Audovia</a> are available
-      <a class="nounderline" href="https://drive.google.com/folderview?id=0B6s7db9SsZhVUmFhM2VVaG5raTg&usp=sharing"
-      target="_blank" rel="noopener noreferrer">here</a>.
-      </p>
-      <p>
-      For a more realistic practice chanter sound you can use the TimGM6mbPC1t.sf2 soundbank with <em>I[chanter] X[bank_select_coarse]=1</em> as in <strong>Mrs&nbsp;Lily&nbsp;Christie</strong>.
+        Piobaireachd should be played at a steady pace, allowing the melody to drift over the rhythm of the notes.
       </p>
       </span>
     </div>
 
     <!-- changed encoding to UTF-8 -->
-    <div align="center" style="width: 968px; margin: auto; position: absolute; top: 850px; left: 0px; right: 0px;">
-      <span class="text"><em>Copyright &copy; 2017&nbsp;&nbsp; Donald G Gray</em><br><br>&nbsp;
+    <div align="center" style="width: 968px; margin: auto; position: absolute; top: 740px; left: 0px; right: 0px;">
+      <span class="text"><em>Copyright &copy; 2017, 2018&nbsp;&nbsp; Donald G Gray</em><br><br>&nbsp;
       </span>
 
     </div>
